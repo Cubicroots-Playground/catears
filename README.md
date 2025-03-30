@@ -15,9 +15,10 @@ You will need the following items:
 - Part 1 & 2 from the `models` folder printed with any 3D printer
 - 1x ESP8266 (I am using a "Wemos D1 Mini")
 - 1x a few centimeters of a WS2811 LED strip 
-- A bunch of cables to solder everything together
-- A Micro-USB to USB cable
+- A bunch of cables to solder everything together (preferably flexible cable)
+- A Micro-USB to USB cable (can be pretty short)
 - A USB power source (e.g. a power bank)
+- Optional: A connector to solder between microcontroller and cat ears (e.g. JST SM 3 Pin)
 
 Further, access to the following tools is needed:
 
@@ -51,12 +52,14 @@ To scale the models import them into your favorite slicer and scale the x/y axis
 1. Print the hairband. Part 1 & 2 are needed.
 2. Solder wires to your LED strip and connect them with the microcontroller.
    1. You can use a connector between them to easily plug and unplug them.
-   2. The LED strip runs on 5V.
-   3. Connect the data wire of the LED strip to your microcontrollers `GPIO3` pin.
+   2. To make things look way more nice I suggest covering the cables with some cable sleeves.
+   3. The LED strip runs on 5V.
+   4. Connect the data wire of the LED strip to your microcontrollers `GPIO3` pin.
 3. Assemble the models.
    1. Put the LED strip into the thin groove along the top of the hairband of the bigger of the 2 models.
    2. Cut the LED strip to size.
    3. Put the second, smaller part o top and make sure the LED strip is fitting into its groove as well.
+   4. Glue the parts together or use 2 thin strips of a same colored tape to hold them together.
 4. Flash the microcontroller.
    1. Copy `esphome/secrets.example.yaml` to `esphome/secrets.yaml` and set your secrets.
    2. Connect the microcontroller to your computer via a USB cable.
@@ -67,4 +70,5 @@ To scale the models import them into your favorite slicer and scale the x/y axis
 5. Verify everything is working.
    1. Power the microcntroller (either by your computer or an external power source).
    2. Navigate your browser to `http://catears.local/`, the ESPHome dashboard should be visible.
-   3. You can change the brightness, color and effects from this dashboard.
+      - In case the given WiFi is not reachable the ESP will offer an access point called "catear" connect to it via the `ap_password` and navigate to `192.168.4.1` where the dashboard is located at 
+   4. You can change the brightness, color and effects from this dashboard.
