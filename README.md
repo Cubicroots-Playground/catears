@@ -2,6 +2,9 @@
 
 This repository contains everything you need to build your own brightly lit cat ear hairband with widely adopted electronics.
 
+![](media/catears-front.jpg)
+![](media/catears-top.jpg)
+
 ## Why?
 
 This project got inspired by the satirical "Safety cat ears required" signs you might see in some hackspaces or at chaos events. Half joking I once said I will actually build "real" safety cat ears. This repository is the result of that.
