@@ -16,6 +16,7 @@ This project got inspired by the satirical "Safety cat ears required" signs you 
 You will need the following items:
 
 - Part 1 & 2 from the `models` folder printed with any 3D printer
+- An enclosure for the microcontroller, I am using [this model](https://www.thingiverse.com/thing:4802020)
 - 1x ESP8266 (I am using a "Wemos D1 Mini")
 - 1x a few centimeters of a WS2811 LED strip 
 - A bunch of cables to solder everything together (preferably flexible cable)
