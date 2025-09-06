@@ -21,6 +21,7 @@ You will need the following items:
 - 1x a few centimeters of a WS2811 LED strip 
 - A bunch of cables to solder everything together (preferably flexible cable)
   - Either use a 3 core sealed cable or wrap 3 wires with a cable sleeve
+- A button with 2 wires attached
 - A Micro-USB to USB cable (can be pretty short)
 - A USB power source (e.g. a power bank)
 - Optional: A connector to solder between microcontroller and cat ears (e.g. JST SM 3 Pin)

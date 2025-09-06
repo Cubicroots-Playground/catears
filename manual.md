@@ -12,9 +12,12 @@
    3. The LED strip runs on 5V.
    4. Connect the data wire of the LED strip to your microcontrollers `GPIO3` pin.
    
+4. Install the Button
+   1. Connect the Button to the 3V and GPIO16 pin.
+   
    ![](media/manual_step2_1.jpg)
    ![](media/manual_step2_2.jpg)
-4. Assemble the models.
+5. Assemble the models.
    1. Put the LED strip into the thin groove along the top of the hairband of the bigger of the 2 models.
    2. Cut the LED strip to size.
    
@@ -24,19 +27,23 @@
    4. Glue the parts together or use 2 thin strips of tape to hold them together.
    
    ![](media/manual_step3_2.jpg)
-5. Flash the microcontroller.
+6. Flash the microcontroller.
    1. Copy `esphome/secrets.example.yaml` to `esphome/secrets.yaml` and set your secrets.
    2. Connect the microcontroller to your computer via a USB cable.
    3. In a terminal run `(cd esphome && docker compose up)`
    4. Navigate your browser to `http://127.0.0.1:6052`.
    5. LogIn with user `admin` and password `admin`.
    6. Using the UI upload the `catears.yaml` to your microcontroller.
-6. Put the microcontroller into the enclosure and connect everything.
+7. Put the microcontroller into the enclosure and connect everything.
    
    ![](media/manual_step6_1.jpg)
    ![](media/manual_step6_2.jpg)
-7. Verify everything is working.
+8. Verify everything is working.
    1. Power the microcntroller (either by your computer or an external power source).
-   2. Navigate your browser to `http://catears.local/`, the ESPHome dashboard should be visible.
+   2. Make sure the button works.
+      1. Single short presses cycles through effects.
+      2. Single long presses cycles through brightness.
+      3. Single very long press (5-10s) enables WiFi.
+   3. Navigate your browser to `http://catears.local/`, the ESPHome dashboard should be visible.
       - In case the given WiFi is not reachable the ESP will offer an access point called "catear" connect to it via the `ap_password` and navigate to `192.168.4.1` where the dashboard is located at 
-   3. You can change the brightness, color and effects from this dashboard.
+   4. You can change the brightness, color and effects from this dashboard as well.
